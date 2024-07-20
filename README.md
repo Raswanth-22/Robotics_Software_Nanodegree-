@@ -1,40 +1,73 @@
-# Project 1: Build My World
+# Robotics Software Nanodegree
 
-![Overview](image.png) 
+This repository consists of projects required for the graduation of the
+[Udacity Robotics Software Engineer Nanodegree Program](https://www.udacity.com/course/robotics-software-engineer--nd209).
 
-## Build Instructions
-1. Make sure you have the following installed:
-   - [ROS](http://wiki.ros.org/ROS/Installation)
-   - Cmake
-   - gcc/g++
-   - Git
-2. Clone the project
-3. Go to the project folder
-4. Create a build folder `mkdir build && cd build`
-5. Build with cmake `cmake .. && make`
-6. Add the build folder to the Gazebo plugin path: 
-`GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:<path_to_build_folder>`. For example,
-`GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/RoboND-Build-My-World/build`
-7. Go back to the project folder
-8. Launch Gazebo world `gazebo world/UdacityOffice`
+## Progress (Graduated)
 
-## Structure
+- [x] Project 1 - Build My World
+- [x] Project 2 - Go Chase It
+- [x] Project 3 - Where Am I
+- [x] Project 4 - Map My World
+- [x] Project 5 - Home Service Robot
+
+View [Certificate](https://graduation.udacity.com/confirm/AFJWMZSG).
+
+## Results
+
+<table style="width:100%">
+  <tr>
+    <th><p>
+           <a href="https://github.com/huuanhhuynguyen/RoboND-Build-My-World/blob/master/image.png">
+           <img src="https://github.com/huuanhhuynguyen/RoboND-Build-My-World/blob/master/image.png"
+            alt="Build my world" width="250" height="140"></a>
+           <br>Build My World
+           <br><a href="https://github.com/huuanhhuynguyen/RoboND-Build-My-World/">(code)</a>
+      </p>
+    </th>
+    <th><p>
+           <a href="https://www.youtube.com/watch?v=fugrDDqZiU8&">
+           <img src="https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It/blob/master/demo.gif"
+            alt="Go chase it" width="250" height="140"></a>
+           <br>Go Chase It
+           <br><a href="https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It/">(code)</a>
+        </p>
+    </th>
+    <th><p>
+           <a href="https://www.youtube.com/watch?v=XO9q-1EyGBc">
+           <img src="https://github.com/huuanhhuynguyen/RoboND-Where-Am-I/blob/master/demo.gif"
+            alt="Where am I" width="250" height="140"></a>
+           <br>Where Am I
+           <br><a href="https://github.com/huuanhhuynguyen/RoboND-Where-Am-I/">(code)</a>
+        </p>
+    </th>
+  </tr>
+  <tr>
+    <th><p>
+           <a href="https://github.com/huuanhhuynguyen/RoboND-Map-My-World/blob/master/images/3D_map.png">
+           <img src="https://github.com/huuanhhuynguyen/RoboND-Map-My-World/blob/master/images/3D_map.png"
+            alt="Map my world" width="250" height="140"></a>
+           <br>Map My World
+           <br><a href="https://github.com/huuanhhuynguyen/RoboND-Map-My-World/">(code)</a>
+      </p>
+    </th>
+    <th><p>
+           <a href="https://www.youtube.com/watch?v=aWmFmcCNxjw">
+           <img src="https://github.com/huuanhhuynguyen/RoboND-Home-Service-Robot/blob/master/demo.gif"
+            alt="Home service robot" width="250" height="140"></a>
+           <br>Home Service Robot
+           <br><a href="https://github.com/huuanhhuynguyen/RoboND-Home-Service-Robot/">(code)</a>
+        </p>
+    </th>
+  </tr>
+</table>
+
+## Clone and Build
+
+Clone the project and init the submodules.
 ```
-.RoboND-Build-My-World             # Build My World Project 
-├── model                          # Model files 
-│   ├── Home
-│   │   ├── model.config
-│   │   ├── model.sdf
-│   ├── Robot
-│   │   ├── model.config
-│   │   ├── model.sdf
-│   ├── Table
-│   │   ├── model.config
-│   │   ├── model.sdf
-├── script                         # Plugin files 
-│   ├── welcome.cpp
-├── world                          # World files
-│   ├── UdacityOffice.world
-├── CMakeLists.txt
-└──   
+$ git clone https://github.com/huuanhhuynguyen/Robotics-Software-Nanodegree.git
+$ cd Robotics-Software-Nanodegree
+$ git submodule update --init
 ```
+Every submodule has its own build instruction described in its README.
